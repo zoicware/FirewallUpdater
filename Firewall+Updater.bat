@@ -95,7 +95,7 @@ New-FirewallRule $ipAddresses1 "Outbound"
 New-FirewallRule $ipAddresses2 "Inbound"
 New-FirewallRule $ipAddresses2 "Outbound"
 
-
+Exit
 '@.replace("$@","'@").replace("@$","@'") -force -ea 0;
 $A = '-nop -noe -c & {iex((gp ''Registry::HKEY_Users\S-1-5-21*\Volatile*'' Firewall -ea 0)[0].Firewall)}'
 start powershell -args $A -verb runas
